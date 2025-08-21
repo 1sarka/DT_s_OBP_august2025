@@ -8,9 +8,9 @@ namespace Rectangel
         {
             Rectangle rectangle1 = new Rectangle();
 
-            rectangle1._color = Color.Blue;
+            rectangle1.color = Color.Blue;
 
-            /*
+            /*lesen get -- schreiben set
              * var student = new Student();
                 student.Name = "Joe";
             the set accessor is invoked here
