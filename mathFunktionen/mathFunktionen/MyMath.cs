@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace mathFunktionen
 {
-    internal class MyMath
+    public class MyMath
     {
+        /// <summary> toto sa vola xml doc - da s ato aj exportovat
+        /// nieco zmysluplne co popisuje funkciu 
+        /// </summary>
+        /// <param name="a">popisujeme parametre - napr a erste zahl</param>
+        /// <param name="b"> zeweite zahl</param>
+        /// <returns>  groste gemeinshame teilbar value</returns>
         public static int Calc_ggT(int a, int b)
         {
             int z = 0;
@@ -19,7 +25,12 @@ namespace mathFunktionen
             }
             return a;
         }
-
+        /// <summary>
+        /// zahlt kleinste gemeinsahme teiler von zwei zahlen
+        /// </summary>
+        /// <param name="a">erste zahl</param>
+        /// <param name="b">zweite zahl</param>
+        /// <returns></returns>
         public static int Calc_kgV(int a, int b)
         {
             a = (a*b) / Calc_ggT(a, b);
@@ -37,6 +48,12 @@ namespace mathFunktionen
         }
 
         //aufgabe 8 funktionen
+
+        /// <summary>
+        /// it counts average of array of numbers
+        /// </summary>
+        /// <param name="numbers">array of numbers</param>
+        /// <returns>returns average</returns>
         public static double MittelWert(int[] numbers)
         {
             
@@ -47,7 +64,11 @@ namespace mathFunktionen
             }
             return sum/numbers.Length;
         }
-
+        /// <summary>
+        /// it compare numbers and return the smales nummber from array
+        /// </summary>
+        /// <param name="nummbers">array of nummber</param>
+        /// <returns>it returns the smallest nummber</returns>
         public static int kleinsterWert(int[] nummbers)
         {
             int klein = int.MaxValue;
